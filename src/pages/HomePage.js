@@ -4,7 +4,7 @@ import Content from '../components/Content'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Helmet } from 'react-helmet';
-
+import './HomePage.css'
 function HomePage(props) {
 
     return(
@@ -13,7 +13,11 @@ function HomePage(props) {
             <Content>
                 <Row>
                     <Col>
-                    <p>my site</p>
+                    <p id="hometext"> Hi! My name is Shreeya and I'm a high schooler in Maryland. 
+                        I'm very interested in data and computer science as well as policy and politics.
+                    </p>
+                    </Col>
+                    <Col>
                     </Col>
                 </Row>
             </Content>

@@ -23,7 +23,7 @@ class App extends React.Component {
         },
         {
           page: 'about',
-          title: 'about',
+          title: 'about me',
           el: AboutPage,
           path: '/about'
         },
@@ -44,7 +44,7 @@ class App extends React.Component {
   }
   makeLinks = (pages) => {
     return pages.map(page => {
-      return <Link className="nav-link" to={page.path}>{page.title}</Link>
+      return <Link className="nav-link" to={page.path}>{page.page}</Link>
     }
   )}
  

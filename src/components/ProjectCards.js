@@ -15,7 +15,7 @@ class ProjectCards extends React.Component {
                 },
                 {
                     title: 'This site!',
-                    additionalText: 'built using React.js, lib',
+                    additionalText: 'built with React.js',
                     id: 1
                 }
             ] 
