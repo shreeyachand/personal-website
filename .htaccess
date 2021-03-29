@@ -1,5 +1,5 @@
 RewriteEngine on 
 RewriteCond %{http_host} ^http://shreeyachand.me [NC,OR] 
-RewriteCond %{http_host} ^old.com [NC] 
+RewriteCond %{http_host} ^http://shreeyachand.me [NC] 
 RewriteRule ^(.*)$ http://shreeyachand.me/ 
 [R=301,NC,L]
