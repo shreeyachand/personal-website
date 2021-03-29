@@ -1,9 +1,5 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule / shreeyachand.me [L]
-</IfModule>
+RewriteEngine on 
+RewriteCond %{http_host} ^http://shreeyachand.me [NC,OR] 
+RewriteCond %{http_host} ^old.com [NC] 
+RewriteRule ^(.*)$ http://shreeyachand.me/ 
+[R=301,NC,L]
