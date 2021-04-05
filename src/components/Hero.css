@@ -1,6 +1,7 @@
 h3 a {
-    color:purple,
+    color:#228b22;
+    text-decoration: none;
 }
 h3 a:hover{
-    color:rebeccapurple
+    color:#204220;
 }

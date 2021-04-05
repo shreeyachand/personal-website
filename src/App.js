@@ -44,7 +44,7 @@ class App extends React.Component {
   }
   makeLinks = (pages) => {
     return pages.map(page => {
-      return <Link className="nav-link" to={page.path}>{page.page}</Link>
+      return <Link class="nav-link" to={page.path}>{page.page}</Link>
     }
   )}
  
@@ -55,10 +55,10 @@ class App extends React.Component {
           <Container className="p-0" fluid={true}>
             <style>{'body { background-color: #f8f8ff; }'}</style>
             <Navbar className="border-bottom" bg="transparent" expand="lg">
-              <a class="navbar-brand" href="/">Shreeya Chand</a>
-              <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+              <a id="navbar-brand" href="/">Shreeya Chand</a>
+              <Navbar.Toggle class="nav-toggle" className="border-0" aria-controls="navbar-toggle" />
               <Navbar.Collapse id="navbar-toggle">
-                <Nav className="ml-auto">
+                <Nav id="nav-links" className="ml-auto">
                   {this.makeLinks(this.state.pages)}
                 </Nav>
               </Navbar.Collapse>
@@ -66,7 +66,7 @@ class App extends React.Component {
             {this.makeItems(this.state.pages)}
             <Footer />
           </Container>
-        </Router>
+       </Router>
       </>
     );
   }

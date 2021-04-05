@@ -34,3 +34,16 @@
     transform: rotate(360deg);
   }
 }
+
+#nav-links .nav-link {
+  color:#228b22;
+}
+#nav-links .nav-link:hover{
+  color:#204220;
+}
+
+a#navbar-brand {
+  font-size:24px;
+  color:#228b22;
+  text-decoration: none;
+}
