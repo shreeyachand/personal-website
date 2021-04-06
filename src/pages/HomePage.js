@@ -14,7 +14,7 @@ function HomePage(props) {
                 <Row>
                     <Col>
                     <p id="hometext"> Hi! My name is Shreeya and I'm a high schooler in Maryland. 
-                        I'm very interested in data and computer science as well as policy and politics.
+                        I'm very interested in data and computer science and their real-world applications.
                     </p>
                     </Col>
                     <Col>
