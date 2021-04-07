@@ -12,7 +12,6 @@ function Footer() {
                 <Container fluid={true}>
                     <Row className="border-top justify-content-between p-3">
                     </Row>
-                    <Row>© 2021</Row>
                     <Row><a href="https://shreeyachand.medium.com/">Medium</a></Row>
                     <Row><a href="https://github.com/shreeyachand/">GitHub</a></Row>
                     <Row><a href="mailto:hi@shreeyachand.me">hi@shreeyachand.me</a></Row>
