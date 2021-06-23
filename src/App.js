@@ -53,7 +53,7 @@ class App extends React.Component {
   }
   makeLinks = (pages) => {
     return pages.map(page => {
-      if (page.type == 'site') {
+      if (page.type === 'site') {
         return <Link class="nav-link" to={page.path}>{page.page}</Link>
       } else {
         return <a class="nav-link" href={page.path}>{page.page}</a>
