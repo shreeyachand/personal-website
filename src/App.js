@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
+import Contact from './pages/Contact';
 
 
 class App extends React.Component {
@@ -17,21 +18,30 @@ class App extends React.Component {
       pages: [
         {
           page: 'home',
+          type: 'site',
           title: 'home',
           el: HomePage,
           path: '/'
         },
         {
           page: 'about',
+          type: 'site',
           title: 'about me',
           el: AboutPage,
           path: '/about'
         },
         {
-          page: 'projects',
-          title: 'projects',
-          el: ProjectsPage,
-          path: '/projects'
+          page: 'github',
+          type: 'external',
+          title: 'github',
+          path: 'https://github.com/shreeyachand'
+        },
+        {
+          page: 'contact',
+          type: 'site',
+          title: 'contact me',
+          el: Contact,
+          path: '/contact'
         }
       ]
     }
@@ -44,7 +54,11 @@ class App extends React.Component {
   }
   makeLinks = (pages) => {
     return pages.map(page => {
-      return <Link class="nav-link" to={page.path}>{page.page}</Link>
+      if (page.type == 'site') {
+        return <Link class="nav-link" to={page.path}>{page.page}</Link>
+      } else {
+        return <a class="nav-link" href={page.path}>{page.page}</a>
+      }
     }
   )}
  
