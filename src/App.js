@@ -7,7 +7,6 @@ import './App.css';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ProjectsPage from './pages/ProjectsPage';
 import Contact from './pages/Contact';
 
 
@@ -39,7 +38,7 @@ class App extends React.Component {
         {
           page: 'contact',
           type: 'site',
-          title: 'contact me',
+          title: 'contact me!',
           el: Contact,
           path: '/contact'
         }

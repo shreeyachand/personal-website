@@ -73,12 +73,4 @@ a#navbar-brand {
   color: #228b22;
   text-decoration: none;
 }
-
-::-moz-selection {
-  background: #88b299;
-}
-
-::selection {
-  background: #88b299;
-}
 /*# sourceMappingURL=App.css.map */

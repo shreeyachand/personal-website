@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Helmet } from 'react-helmet';
 import './HomePage.css'
+
 function HomePage(props) {
 
     return(

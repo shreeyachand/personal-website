@@ -11,11 +11,13 @@ function AboutPage(props) {
 
             <Content>
             <p>
-            I love programming, both competitive and project-based. I have been programming in Python, Java, and JavaScript, and I would love to expand the applications of my programs to make a tangible impact. I'm interested in exploring how programming can be applied to real-world issues through concepts like AI and ML. For the same reasons, I am also captivated by data science and I am currently expanding my knowledge in the field. I find its applications to politics and social-media patterns enthralling. Lately, I have been reading about Twitter interaction models related to elections. I want to create similar models and answer questions about humans using data and programming. 
+            I am incredibly interested in all things data science, computer science, machine learning, AI, and statistics.
+            I really want to apply my knowledge in all of these fields to real-world problems, from politics to genetic risks for diseases.
             </p>
             <br></br>
             <p>
-            I also love music! It's one of my favorite things in the world, and has made me a confident and dedicated person. I play the piano, trombone, and sing! I love listening to music as well - Tame Impala is one of my favorite artists.
+            I also like to play <a href="https://www.geoguessr.com/user/603ab68ef8dabd0001f98f76">GeoGuessr</a>, read, and listen and play to music. Music one of my favorite things in the world, and has made me a confident and dedicated person. I play the piano, trombone, and sing! 
+            I love listening to music as well, some of my favorite artists include Tame Impala, Taylor Swift, and HAIM.
             </p>
             </Content>
             <Helmet><title>about</title></Helmet>

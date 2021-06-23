@@ -4,13 +4,14 @@ import Content from "../components/Content"
 import Hero from '../components/Hero';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-import { init } from 'emailjs-com';
+import './Contact.css'
 import emailjs from 'emailjs-com';
+const { REACT_APP_EMAIL_USER,  REACT_APP_EMAIL_SERVICE, REACT_APP_EMAIL_TEMPLATE } = process.env;
 
 export default function Contact(props) {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const toastifySuccess = () => {
-    toast('Form sent!', {
+    toast('message sent!', {
       position: 'bottom-right',
       autoClose: 5000,
       hideProgressBar: true,
@@ -30,24 +31,27 @@ export default function Contact(props) {
         message: data.message
       };
       await emailjs.send(
-        process.env.smth,
-        process.env.smth,
+        REACT_APP_EMAIL_SERVICE,
+        REACT_APP_EMAIL_TEMPLATE,
         templateParams,
-        process.env.smth
+        REACT_APP_EMAIL_USER
       );
       reset();
+      toastifySuccess();
     } catch (e) {
       console.log(e);
     }
   };
 
   return (
+    <>
+    <Hero title={props.title} subTitle='send me a message to inquire about getting a website made, working on another project, or just to exchange music recommendations!' />
+
     <Content>
-        <Hero title={props.title} subTitle={props.subTitle} text={props.text} />
         <div className='ContactForm'>
-      <div className='container'>
+      <div className=''>
         <div className='row'>
-          <div className='col-12 text-center'>
+          <div className='col-12'>
             <div className='contactForm'>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
@@ -120,16 +124,18 @@ export default function Contact(props) {
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
                 </div>
-                <button className='submit-btn' type='submit'>
-                  Submit
+                <br></br>
+                <button id="submitButton" className='submit-btn' type='submit'>
+                  submit
                 </button>
               </form>
             </div>
+            <ToastContainer />
           </div>
         </div>
       </div>
     </div>
-    {console.log(process.env.REACT_APP_SERVICE_ID)}
     </Content>
+    </>
   );
 }
