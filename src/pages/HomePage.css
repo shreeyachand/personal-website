@@ -1,3 +1,8 @@
 #hometext {
     font-size:20px;
 }
+a, a:hover, a:visited {
+    color: white;
+    font-style: under;
+    text-decoration: underline;
+}

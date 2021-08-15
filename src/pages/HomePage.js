@@ -7,27 +7,31 @@ import { Helmet } from 'react-helmet';
 import './HomePage.css'
 
 function HomePage(props) {
-
+    var mode = props.mode;
     return(
         <>
-            <Hero title='Shreeya Chand' subTitle={props.subTitle} text={props.text} />
-            <Content>
-                <Row>
+            <Hero title='shreeya chand' subTitle={props.subTitle} text={props.text} />
+                <Content>
+                    <Row>
                     <Col>
-                    <p id="hometext"> Hi! My name is Shreeya and I'm a high schooler in Maryland. 
-                        I'm very interested in data and computer science and their real-world applications.
+                    <p id="hometext"> hi! i'm a high schooler in maryland who's interested in tech, politics, music, and more.
                     </p>
                     </Col>
                     <Col>
                     </Col>
-                </Row>
-            </Content>
+                    </Row>
+                    <Row>
+                        <ul>
+                            <li><a href="https://github.com/shreeyachand">github</a></li>
+                            <li><a href="mailto:hi@shreeyachand.me">email</a></li>
+                        </ul>
+                    </Row>
+                </Content>
             <Helmet>
                 <title>Shreeya Chand</title>
             </Helmet>
         </>
     );
-
 }
 
 export default HomePage;
