@@ -1,7 +1,3 @@
-h3 {
-    color:#228b22;
-    text-decoration: none;
-}
-h3 a:hover{
-    color:#204220;
+#title {
+    font-style: italic;
 }
