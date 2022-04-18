@@ -1,13 +1,13 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Content from '../components/Content'
+import Contact from '../components/Contact'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Helmet } from 'react-helmet';
 import './HomePage.css'
 
 function HomePage(props) {
-    var mode = props.mode;
     return(
         <>
             <Hero title='shreeya chand' subTitle={props.subTitle} text={props.text} />
@@ -23,7 +23,10 @@ function HomePage(props) {
                     <Row>
                         <ul>
                             <li><a href="https://github.com/shreeyachand">github</a></li>
-                            <li><a href="mailto:hi@shreeyachand.me">email</a></li>
+                            <li><a href="https://www.goodreads.com/user/show/131382685-shreeya">goodreads</a></li>
+                            <br></br>
+                            {/*<li><a href="mailto:hi@shreeyachand.me">email</a></li>*/}
+                            <li><Contact></Contact></li>
                         </ul>
                     </Row>
                 </Content>
