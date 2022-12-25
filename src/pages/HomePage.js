@@ -24,9 +24,10 @@ function HomePage(props) {
                         <ul>
                             <li><a href="https://github.com/shreeyachand">github</a></li>
                             <li><a href="https://www.goodreads.com/user/show/131382685-shreeya">goodreads</a></li>
+                            <li><a href="https://www.linkedin.com/in/shreeya-chand/">linkedin</a></li>
                             <br></br>
                             {/*<li><a href="mailto:hi@shreeyachand.me">email</a></li>*/}
-                            <li><Contact></Contact></li>
+                            /*<li><Contact></Contact></li> */
                         </ul>
                     </Row>
                 </Content>
